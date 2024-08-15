@@ -1,99 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
-
-*{
-    box-sizing: border-box;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2b30;
+    color: #fff;
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
-
 }
 
-html{
-    /* me permite deslizar cuando ago en los link del menu */
-    scroll-behavior: smooth;
-}
-/* aqui va el menu */
-.container-header{
-    background-color: #1e2326;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-
-}
-
-.container-header header {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.container-header .logo a {
-
-    font-size: 'righteous';
-    color: rgb(89, 239, 14) ;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-.container-header header ul {
-    display: flex;
-    list-style: none;
-}
-
-.container-header header nav ul li a {
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-    
-}
-
-.container-header header nav ul li a:hover {
-    color: rgb(15, 184, 167) ;
-}
-
-.nav-responsive{
-    background-color: rgb(89, 239, 14);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px ;
-    cursor: pointer;
-    display: none;
-
-} 
-/*seccion de inicio*/
-
-.inicio{
-    background:linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.1)),
-    url(images/fondo2.jpg);
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-}
-.inicio .contenido-banner{
-    padding: 20px;
-    background-color: #1e2326;
-    max-width: 350px;
-    margin: auto;
+header {
     text-align: center;
-    border-radius: 40px;
-
+    padding: 2rem;
+    background-color: #3c3f45;
 }
-.inicio .contenido-banner img{
-    margin-top: 40px;
-    border: 10px solid rgb(89, 239, 14);
-    display: block;
-    width: 100%;
-    margin: auto;
-    border-radius: 100%;
+
+.profile img {
+    border-radius: 10%;
+    width: 60px;
+}
+
+.profile h1 {
+    margin: 1rem 0 0.5rem;
+    font-size: 2rem;
+}
+
+.profile p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+.experience, .projects, footer {
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.job, .project {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: #3c3f45;
+    text-align: center;
+}
+
+.socials a {
+    margin: 0 1rem;
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+.contact p {
+    margin-top: 1rem;
+    font-size: 1rem;
 }
