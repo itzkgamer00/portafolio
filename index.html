@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,233 +6,135 @@
     <title>Perfil de Desarrollador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        .background-foto {
-            background-color: lightblue;
-            height: 120px;
-            width: 100%;
-            margin-bottom: -120px;
-        }
-        .text-muted {
-            font-size: 18px;
-            text-align: center;
-            font-weight: 500;
-        }
-        .btn-primary {
-            font-size: 20px;
-            background-color: lightblue;
-            color: black;
-            border: 0;
-        }
-        .btn-primary:hover {
-            background-color: white;
-            color: black;
-            border: 3px solid black;
-        }
-        .text-normal {
-            font-size: 16px;
-            color: black;
-            text-align: center;
-        }
-        .text-whatsapp {
-            color: green;
-            font-size: 17px;
-            margin-top: 20px;
-        }
-        .badge {
-            font-size: 12px;
-        }
-        footer {
-            background: lightblue;
-            max-height: 120px;
-            height: 100px;
-            margin-bottom: -20px;
-            padding: 10px;
-        }
-        .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra suave alrededor de la tarjeta */
-    transition: box-shadow 0.3s ease-in-out; /* Transición suave al hacer hover */
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Aumenta la sombra cuando se hace hover */
-}
-        .chat-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: lightblue;
-            color: white;
-            border: 2px solid blue;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            font-size: 24px;
-            cursor: pointer;
-        }
-        .chat-button:hover {
-            background-color: #007bff;
-        }
-        .modal-fullscreen {
-            max-height: 100%;
-            height: 90%;
-        }
-        .modal-dialog{
-            height: 100%;
-        }
-        .modal-content{
-            height: 100%;
-        }
-        .modal-body{
-            height: 100%;
-        }
-        
-        iframe{
-            width: 100%;
-            height: 100%;
-        }
-        .btn-close{
-            height: 50px;
-            font-size: 15px;
-        }
-        .rounded-circle{
-            max-width: 150px;
-        }
-    </style>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <div class="background-foto"></div>
-    <div class="container mt-5">
-        <!-- Encabezado -->
-        <div class="text-center">
-            <img src="./img/profile.jpg" class="rounded-circle mb-3" alt="Foto del desarrollador">
-            <h1 class="h3">Kleber González</h1>
-            <p class="text-muted">Desarrollador de software multiplataforma full stack</p>
-            <a href="https://wa.link/5j6b8i" class="btn btn-primary">Contactar</a>
-        </div>
 
-        <!-- Resumen -->
-        <section class="mt-5">
-            <h2 class="h4 text-center">Quién soy</h2>
-            <p class="text-normal">Desarrollador con experiencia en proyectos de aplicaciones web y móviles, especializado en tecnologías como React, Node.js, y bases de datos SQL/NoSQL. Siempre buscando crear sistemas eficaces y a coste bajo.</p>
-        </section>
-
-        <!-- Experiencia -->
-        <section class="mt-5">
-            <h2 class="h4">Experiencia</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h3 class="card-title">PrintDepot</h3>
-                    <p style="color: black; font-size: 14px; font-weight: bold;">Desarrollador Full Stack</p>
-                    <p style="color: black; font-size: 13px; margin-top: -15px">Junio 2023 - Actualidad</p>
-                    <ul>
-                        <li>Desarrollo de aplicaciones web utilizando React y Node.js.</li>
-                        <li>Desarrollo de aplicaciones para escritorio</li>
-                        <li>Manejo de bases de datos SQL y no SQL</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h3 class="card-title">Empresa XYZ</h3>
-                    <p style="color: black; font-size: 14px; font-weight: bold;">Desarrollador Frontend</p>
-                    <p style="color: black; font-size: 13px; margin-top: -15px">Marzo 2022 - Enero 2023</p>
-                    <ul>
-                        <li>Creación de interfaces de usuario con Angular y Bootstrap.</li>
-                        <li>Desarrollo de interfaces visuales para escritorio con librerías de C# NET Window Forms</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-         <!-- Educación -->
-         <section class="mt-5">
-            <h2>Educación</h2>
-            <h4>Universidad Autónoma de Chiapas</h4>
-            <ul>
-                <li><p style="font-size: 15px;">2020-2023</p></li>
-                <li><p style="font-size: 15px; margin-top: -15px;">Ingeniería en Desarrollo y Tecnologías del Software</p></li>
-            </ul>
-        </section>
-        <!-- Habilidades -->
-        <section class="mt-5">
-            <h2 class="h4">Habilidades</h2>
-            <div class="d-flex flex-wrap">
-                <span class="badge bg-secondary m-1">JavaScript</span>
-                <span class="badge bg-secondary m-1">Typescript</span>
-                <span class="badge bg-secondary m-1">React</span>
-                <span class="badge bg-secondary m-1">React Native</span>
-                <span class="badge bg-secondary m-1">Node.js</span>
-                <span class="badge bg-secondary m-1">Express.js</span>
-                <span class="badge bg-secondary m-1">MySQL</span>
-                <span class="badge bg-secondary m-1">SQL Server</span>
-                <span class="badge bg-secondary m-1">Firebase</span>
-                <span class="badge bg-secondary m-1">C# .NET Windows Forms</span>
-            </div>
-        </section>
-
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Kenrich Paiz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#quien-soy">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experiencia">Educacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#educacion">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
         
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <!-- Proyectos -->
-        <section class="mt-5">
-            <h2 class="h4">Proyectos en venta</h2>
-            <div class="row">
-                <div class="col-12 col-md-6 mb-3">
-                    <div class="card">
-                        <img src="img/Proyecto 1/foto1.png" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Chat multicanal</h5>
-                            <p class="card-text">Permite conectarte con múltiples conversaciones sin que se registren mediante un chat en vivo, excelente opción para sitios que requieran chat en vivo.</p>
-                            <a href="proyecto1.html" style="font-size: 16px;">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-               <div class="col-12 col-md-6 mb-3">
-                    <div class="card">
-                        <img src="img/Proyecto 2/cover.png" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Tienda en línea</h5>
-                            <p class="card-text">Aumenta tus ventas con una tienda en línea, no necesita registro de usuarios para comprar. Permite tomar pedidos para atender vía WhatsApp e incluye sistema de cobro en Stripe.</p>
-                            <a href="proyecto2.html" style="font-size: 16px;">Ver más</a>
+<!-- Ajuste de espacio para el navbar fijo -->
+<div style="padding-top: 80px;"></div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       
-
-    
-        
+<div class="container mt-5">
+    <!-- Encabezado -->
+    <div class="text-center">
+        <img src="./images/perfil3.jpg" class="rounded-circle mb-3" alt="Foto del desarrollador">
+        <h1 class="h3">Kenrich Paiz</h1>
+        <p class="text-muted">Desarrollador de software multiplataforma.</p>
+        <a href="https://wa.me/50585289822" class="btn btn-primary" target="_blank">Contactar</a>
+        <a href="Archivos/Kenrich Paiz CV.pdf" download class="btn btn-primary">Descargar CV</a>
     </div>
 
-    <footer class="mt-5 text-center">
-        <p style="color: black; font-size: 17px; margin-top: 20px;">¿Necesitas un software a la medida? <a href="https://wa.link/5j6b8i" class="text-whatsapp">¡Contáctame!</a></p>
-    </footer>
+    <!-- Resumen -->
+    <section class="mt-5" id="quien-soy">
+        <h2 class="h4 text-center">Quién soy</h2>
+        <strong><p class="text-normal">Desarrollador con experiencia en proyectos de aplicaciones web y de escritorio, especializado en tecnologías como C#, .NETFramework, ASP.NET, NodeJS, React, y bases de datos SQL.</p></strong>
+    </section>
 
-    <!-- Botón flotante de chat -->
-    <div class="chat-button" data-bs-toggle="modal" data-bs-target="#chatModal">
-        <i class="fas fa-comment-dots"></i>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade modal-fullscreen" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-fullscreen">
-            <div class="modal-content">
-                <div class="modal-body p-0">
-                    <iframe src="https://captcha-es.web.app/cliente.html"></iframe>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Experiencia -->
+    <section class="mt-5" id="experiencia">
+        <h2 class="h4">Experiencia</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 style="color: teal;" class="card-title">SubAgencia Airpak-Wester union (Nagarote III)</h3>
+                <p style="color: rgb(0, 0, 0); font-size: 14px; font-weight: bold;">Desarrollador Full Stack</p>
+                <p style="color: rgb(0, 0, 0); font-size: 13px; margin-top: -15px">OCTUBRE 2021 - Actualidad</p>
+                <ul>
+                    <strong><li>Desarrollo de aplicación de escritorio (C#, Windows Forms, SQL Server).</li></strong>
+                </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Educación -->
+    <section class="mt-5" id="educacion">
+        <h2>Educación</h2>
+        <h4>Universidad De Occidente</h4>
+        <ul>
+            <li><p style="font-size: 15px;">2017-2022</p></li>
+            <li><p style="font-size: 15px; margin-top: -15px;">Ingeniería en Sistemas</p></li>
+        </ul>
+        <h4>Universidad Multidisciplinaria Ricardo Morales Avilés</h4>
+        <ul>
+            <li><p style="font-size: 15px;">2023-2024</p></li>
+            <li><p style="font-size: 15px; margin-top: -15px;">Ingeniería en Sistemas</p></li>
+        </ul>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="mt-5" id="habilidades">
+        <h2 class="h4">Habilidades</h2>
+        <div class="d-flex flex-wrap">
+            <span class="badge bg-secondary m-1">Html</span>
+            <span class="badge bg-secondary m-1">Css</span>
+            <span class="badge bg-secondary m-1">JavaScript</span>
+            <span class="badge bg-secondary m-1">C#</span>
+            <span class="badge bg-secondary m-1">Asp.Net</span>
+            <span class="badge bg-secondary m-1">SQL Server</span>
+            <span class="badge bg-secondary m-1">C# .NET Windows Forms</span>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="mt-5" id="proyectos">
+        <h2 class="h4">Proyectos</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+                <div class="card">
+                    <img src="images/sistemacaja.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema de Caja (PayBox)</h5>
+                        <p class="card-text">Permite conectarte con múltiples conversaciones sin que se registren mediante un chat en vivo.</p>
+                        <a href="https://github.com/itzkgamer00/POSNAG" target="_blank" style="font-size: 16px;">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tienda en línea</h5>
+                        <p class="card-text">Aumenta tus ventas con una tienda en línea, no necesita registro de usuarios para comprar.</p>
+                        <a href="proyecto2.html" style="font-size: 16px;">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="mt-5 text-center" id="contacto">
+    <p style="color: black; font-size: 17px; margin-top: 20px;">¿Necesitas un software a la medida? <a href="https://wa.link/5j6b8i" class="text-whatsapp">¡Contáctame!</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
