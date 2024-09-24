@@ -1,16 +1,16 @@
 /* General */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(80, 163, 188);
     color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
+    margin: 10%;
+    padding: 10px;
 }
 
 /* Navbar */
 .navbar {
-    background-color: rgb(255, 255, 255); /* Color de fondo del navbar */
-    padding: 15px;
+    background-color: teal; /* Color de fondo del navbar */
+    padding: 5px;
 }
 
 .navbar-brand {
@@ -20,53 +20,61 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: rgb(7, 7, 7);
+    color: rgb(0, 0, 0);
 }
 
 .navbar-nav .nav-link:hover {
     background-color: teal;
-    color: #fff;
+    color: #ffffff;
     transition: 0.4s;
 }
 
 /* Sección de encabezado */
 .text-center img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border: 4px solid rgb(0, 255, 255);
+    border: 5px solid rgb(65, 255, 208);
+    margin-top: -100px;
 }
 
 .text-center h1 {
     font-size: 24px;
     font-weight: bold;
-    color: teal;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .text-center p {
     font-size: 20px;
-    color: teal;
+    color: rgb(253, 253, 253);
     font-weight: bold;
+    text-align: center;
 }
-
+.text-normal{
+    text-align: center;
+    color: black;
+    padding: 25px;
+    font-size: 25px;
+}
 .btn-primary {
-    background-color: teal;
+    background-color: rgb(0, 0, 0);
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #1ef0cd;
+    background-color: #063c99;
 }
 
 /* Sección de experiencia */
 .card {
     border: none;
-    box-shadow: 0px 0px 10px teal;
-    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: teal  ;
 }
 
 .card-title {
-    color: #007bff;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -77,10 +85,20 @@ body {
 .card-body li {
     list-style-type: disc;
 }
+.card-body h3{
+    color: rgb(0, 0, 0);
+}
+.card-body p {
+    color: #000000;
+    font-size: 5px; 
+    font-weight: bold;
+    padding: 5px
+}
+
 
 /* Sección de educación */
 h4 {
-    color: teal;
+    color: rgb(0, 0, 0);
 }
 
 ul {
